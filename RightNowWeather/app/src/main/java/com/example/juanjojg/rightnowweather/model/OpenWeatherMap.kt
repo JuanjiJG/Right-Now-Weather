@@ -6,7 +6,6 @@ class OpenWeatherMap {
     var base: String? = null
     var main: Main? = null
     var wind: Wind? = null
-    var rain: Rain? = null
     var clouds: Clouds? = null
     var dt: Int = 0
     var sys: Sys? = null
@@ -16,13 +15,12 @@ class OpenWeatherMap {
 
     constructor() {}
 
-    constructor(coord: Coord, weatherList: List<Weather>, base: String, main: Main, wind: Wind, rain: Rain, clouds: Clouds, dt: Int, name: String, cod: Int) {
+    constructor(coord: Coord, weatherList: List<Weather>, base: String, main: Main, wind: Wind, clouds: Clouds, dt: Int, name: String, cod: Int) {
         this.coord = coord;
         this.weather = weather;
         this.base = base
         this.main = main
         this.wind = wind
-        this.rain = rain
         this.clouds = clouds
         this.dt = dt
         this.sys = sys
