@@ -10,9 +10,7 @@ import java.net.URL;
 public class Helper {
     static String stream = null;
 
-    public Helper() {
-
-    }
+    public Helper() {}
 
     public String getHTTPData(String urlString) {
         try {
